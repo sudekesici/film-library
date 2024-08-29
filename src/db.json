@@ -1,0 +1,110 @@
+{
+  "movies": [
+    {
+      "poster_path": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+      "title": "Deadpool & Wolverine",
+      "category": "comedy"
+    },
+    {
+      "poster_path": "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+      "title": "Inside Out 2",
+      "category": "comedy",
+      "description": "Lorem İpsum"
+    },
+    {
+      "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+      "title": "Bad Boys: Ride or Die",
+      "category": "comedy"
+    },
+    {
+      "poster_path": "/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
+      "title": "Despicable Me 4",
+      "category": "comedy"
+    },
+    {
+      "poster_path": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
+      "title": "Twisters",
+      "category": "comedy"
+    },
+    {
+      "poster_path": "/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
+      "title": "Jackpot!",
+      "category": "comedy"
+    },
+
+    {
+      "poster_path": "/5wAlO5zZ3IyzLBAf7cp5WejalmG.jpg",
+      "title": "Prey",
+      "category": "action"
+    },
+    {
+      "poster_path": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
+      "title": "Alien: Romulus",
+      "category": "action"
+    },
+    {
+      "poster_path": "/u9035lysUz3ccloQt0SeIp1Mu8a.jpg",
+      "title": "Mayhem!",
+      "category": "action"
+    },
+    {
+      "poster_path": "/ggZGnJLzO3BTu7ysuuIzou3Oex5.jpg",
+      "title": "Dragonkeeper",
+      "category": "action"
+    },
+    {
+      "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+      "title": "Kingdom of the Planet of the Apes",
+      "category": "action"
+    },
+    {
+      "poster_path": "/xYduFGuch9OwbCOEUiamml18ZoB.jpg",
+      "title": "The Garfield Movie",
+      "category": "action"
+    },
+
+    {
+      "poster_path": "/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
+      "title": "Despicable Me 4",
+      "category": "animation"
+    },
+    {
+      "poster_path": "/5wAlO5zZ3IyzLBAf7cp5WejalmG.jpg",
+      "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+      "category": "animation"
+    },
+    {
+      "poster_path": "/hU42CRk14JuPEdqZG3AWmagiPAP.jpg",
+      "title": "A Quiet Place: Day One",
+      "category": "horror"
+    },
+
+    {
+      "poster_path": "/fzmQ7mMYlBE8q459F6x9BAGgmj9.jpg",
+      "title": "Darkness of Man",
+      "category": "crime"
+    },
+    {
+      "poster_path": "/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
+      "title": "It Ends with Us",
+      "category": "crime"
+    },
+
+    {
+      "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+      "title": "Bad Boys: Ride or Die",
+      "category": "crime"
+    },
+
+    {
+      "poster_path": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
+      "title": "Alien: Romulus",
+      "category": "science"
+    },
+    {
+      "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+      "title": "Kingdom of the Planet of the Apes",
+      "category": "science"
+    }
+  ]
+}
