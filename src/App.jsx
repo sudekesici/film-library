@@ -1,20 +1,13 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchMovies } from "./redux/moviesSlice";
-import Sidebar from "./components/SideBar";
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import './App.css';
 
 function App() {
-  const dispatch = useDispatch();
-  const { movies, status, error } = useSelector((state) => state.movies);
-
-  useEffect(() => {
-    dispatch(fetchMovies());
-  }, []);
-
-  return <>
-   <Sidebar></Sidebar>
-  </>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
 }
 
 export default App;
