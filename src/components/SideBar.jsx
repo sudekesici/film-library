@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMovies } from '../redux/moviesSlice';
+import "../css/sidebar.css"
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -27,12 +28,12 @@ const Sidebar = () => {
   }, {});
 
   return (
-    <div style={{ width: '200px', padding: '10px', backgroundColor: '#f0f0f0' }}>
+    <div className='sidebar'>
       {Object.keys(categorizedMovies).map((category) => (
         <div key={category}>
-          <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
+          <h3 className='sidebarTitle'>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
           {categorizedMovies[category].map((movie) => (
-            <button key={movie.title} style={{ display: 'block', marginBottom: '5px' }}>
+            <button key={movie.title} className='sidebarButton'>
               {movie.title}
             </button>
           ))}

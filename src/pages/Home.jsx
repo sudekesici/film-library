@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import Card from '../components/Card';
 
 
 function Home() {
@@ -11,13 +11,10 @@ function Home() {
             <div>All Movies</div>
             {movies.length > 0 ? (
                 movies.map((movie) => ( 
+
+                    <Card key={movie.id} movie={movie}></Card>
                 
-                    <Link key={movie.id} className='card' to={"/movie-details"}>
-                        <img 
-                            src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} 
-                            
-                        />
-                    </Link>
+    
                 ))
             ) : (
                 <p>No movies available</p>

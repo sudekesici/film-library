@@ -1,10 +1,32 @@
-import React from 'react';
+import React,{useState} from 'react'
+import {Link} from "react-router-dom";
+import '../css/header.css'
+import logo from '../img/logo.png';
 
-const Header = () => {
+function Header(){
+  const [search,setSearch] = useState('false') // Bununla search ikonuna basınca açılır kapanır input alanı yapıcam.
   return (
-    <header style={{ padding: '10px', backgroundColor: '#282c34', color: 'white' }}>
-      <input type="text" placeholder="Search" style={{ width: '200px', padding: '5px' }} />
-    </header>
+  <header>
+    <div className='container flexSB' style={{padding:"0px 0px"}}>
+      <nav className='flexSB'>
+        <div className='logo'>
+          <img src={logo} alt="" />
+        </div>
+        <ul className='flexSB'>
+          <Link to={'/'}>Home</Link>
+          <Link to={'/series'}>Series</Link>
+        </ul>
+        <button className='toggle'>
+           <i className='fa fa-bars'></i>
+        </button>
+      </nav>
+      <div className='account flexSB'>
+        <i className='fa fa-search'></i>
+        <i className='fa fa-bell'></i>
+        <i className='fa fa-user'></i>
+      </div>
+    </div>
+  </header>
   );
 };
 

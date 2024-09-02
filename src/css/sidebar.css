@@ -1,0 +1,27 @@
+.sidebar{
+  width: 200px;
+  padding: 10px;
+  background-color: black;
+  
+}
+
+.sidebarTitle{
+ color: #fff;
+}
+.sidebarButton{
+  background-color: #e50813;
+  display: block;
+  margin-bottom: 5px;
+  width: 180px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  font-weight: 500;
+
+}
+
+
+
+
