@@ -12,18 +12,15 @@ function Header(){
         <div className='logo'>
           <img src={logo} alt="" />
         </div>
-        <ul className='flexSB'>
+        <ul className='flexSB '>
           <Link to={'/'}>Home</Link>
           <Link to={'/series'}>Series</Link>
         </ul>
-        <button className='toggle'>
-           <i className='fa fa-bars'></i>
-        </button>
       </nav>
-      <div className='account flexSB'>
-        <i className='fa fa-search'></i>
-        <i className='fa fa-bell'></i>
-        <i className='fa fa-user'></i>
+      <div className='flexSB' style={{marginRight:"10px"}}>
+        <a href=""><i className='fa fa-search'></i></a>
+        <a href=""><i className='fa fa-bell'></i></a> 
+        <a href=""><i className='fa fa-user'></i></a>
       </div>
     </div>
   </header>

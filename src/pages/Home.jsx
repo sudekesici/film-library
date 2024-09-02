@@ -8,7 +8,7 @@ function Home() {
 
     return (
         <div className='HomeContainer'>
-            <div>All Movies</div>
+            <div className='homeTitle'>All Movies</div>
             {movies.length > 0 ? (
                 movies.map((movie) => ( 
 
