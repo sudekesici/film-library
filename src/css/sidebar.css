@@ -1,32 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .sidebar{
-  width: 200px;
+  width: 250px;
   padding: 10px;
   background-color: black;
+  padding:20px;
+  margin: 20px;
   
 }
 .sidebarTitle{
  color: #fff;
- margin-bottom: 5px;
+ margin-bottom: 10px;
  font-size: 20px;
+ font-family: "Open Sans", sans-serif;
+ font-weight: 300;
+ text-transform: uppercase;
+ margin: 17px 0px;
+
 }
 .sidebarButton{
-  background-color: #e50813;
+  background-color: black;
   display: block;
-  margin-bottom: 5px;
-  width: 180px;
+  padding: 7px 7px;
+  width: 200px;
   font-size: 17px;
   outline: none;
   border: none;
-  color: #fff;
-  padding: 12px 40px;
+  color: #8cbbea;
   font-weight: 400;
   max-height: 50px;
-  overflow: hidden;
   border-radius: 5px;
-  background-image: linear-gradient(
-    to right bottom, #e50813,rgba(229, 8, 19, 0.8),  rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.9)  
-  );
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
+}
+
+.sidebarButton:hover{
+ color: #fff;
 }
 
 

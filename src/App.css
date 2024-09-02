@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -24,12 +25,45 @@ ul{
     align-items: center;
 }
 
+.flexEnd{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
 .container{
     max-width: 100%;
     margin: auto;
    
 }
 
+.homeTitle{
+ color: #fff;
+ font-family: "Open Sans", sans-serif;
+ font-size: 30px;
+ font-weight: 300 ;
+ letter-spacing: 2px;
+ margin:20px 40px;
+}
 
+.homeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
 
+.sidebarvesearch{
+  display: flex;
+  flex-direction: column;
+}
 

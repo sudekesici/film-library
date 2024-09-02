@@ -2,13 +2,14 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Card from '../components/Card';
 
-
 function Home() {
     const movies = useSelector((state) => state.movies.movies);
 
     return (
-        <div className='HomeContainer'>
-            <div className='homeTitle'>All Movies</div>
+        <div>
+            <div className='homeTitle'>ALL MOVİES</div>
+        <div className='homeContainer'>
+            
             {movies.length > 0 ? (
                 movies.map((movie) => ( 
 
@@ -19,6 +20,7 @@ function Home() {
             ) : (
                 <p>No movies available</p>
             )}
+        </div>
         </div>
     );
 }

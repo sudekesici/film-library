@@ -4,7 +4,7 @@ import '../css/header.css'
 import logo from '../img/logo.png';
 
 function Header(){
-  const [search,setSearch] = useState('false') // Bununla search ikonuna basınca açılır kapanır input alanı yapıcam.
+
   return (
   <header>
     <div className='container flexSB' style={{padding:"0px 0px"}}>
@@ -17,10 +17,9 @@ function Header(){
           <Link to={'/series'}>Series</Link>
         </ul>
       </nav>
-      <div className='flexSB' style={{marginRight:"10px"}}>
+      <div className='' style={{marginRight:"10px", backgroundColor:"black"}}>
+        <input type="text" placeholder='Bir şeyler yaz..' style={{color: "#fff",backgroundColor: "black",border: "none", outline: "none"}} />
         <a href=""><i className='fa fa-search'></i></a>
-        <a href=""><i className='fa fa-bell'></i></a> 
-        <a href=""><i className='fa fa-user'></i></a>
       </div>
     </div>
   </header>

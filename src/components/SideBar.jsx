@@ -31,7 +31,7 @@ const Sidebar = () => {
     <div className='sidebar'>
       {Object.keys(categorizedMovies).map((category) => (
         <div key={category}>
-          <h3 className='sidebarTitle'>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
+          <h3 className='sidebarTitle'>{category}</h3>
           {categorizedMovies[category].map((movie) => (
             <button key={movie.title} className='sidebarButton'>
               {movie.title}
