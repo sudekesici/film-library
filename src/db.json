@@ -1,109 +1,159 @@
 {
   "movies": [
-    {
+    {  
+      "id" : "1",
       "poster_path": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+      "backdrop_path": "/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg",
       "title": "Deadpool & Wolverine",
       "category": "comedy"
     },
-    {
+    {  
+      "id" : "2",
       "poster_path": "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+      "backdrop_path": "/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg",
       "title": "Inside Out 2",
       "category": "comedy"
     },
-    {
-      "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
-      "title": "Bad Boys: Ride or Die",
-      "category": "comedy"
-    },
-    {
-      "poster_path": "/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
-      "title": "Despicable Me 4",
-      "category": "comedy"
-    },
-    {
+  
+    { 
+      "id" : "3",
       "poster_path": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
+      "backdrop_path": "/7aPrv2HFssWcOtpig5G3HEVk3uS.jpg",
       "title": "Twisters",
       "category": "comedy"
     },
-    {
+    
+    {  
+      "id" : "4",
       "poster_path": "/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
-      "title": "Jackpot!",
-      "category": "comedy"
+      "backdrop_path": "/okVLmXL5y18dfN2R4ufMZEGaeCd.jpg",
+      "title": "Kill",
+      "category": "action"
+    },
+       
+    { 
+      "id" : "5",
+      "poster_path": "/5aj8vVGFwGVbQQs26ywhg4Zxk2L.jpg",
+      "backdrop_path": "/lkmkNVFGsRVKZs1MqKbE6zabXc4.jpg",
+      "title": "Longlegs",
+      "category":"horror"
     },
 
-    {
+    { 
+       "id" : "6",
       "poster_path": "/5wAlO5zZ3IyzLBAf7cp5WejalmG.jpg",
+       "backdrop_path": "/n3JeGELHa9V6k9mL81ItMxWLSS6.jpg",
       "title": "Prey",
       "category": "action"
     },
-    {
-      "poster_path": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
-      "title": "Alien: Romulus",
+
+    { 
+      "id" : "7",
+      "poster_path": "/eEkAY5veAnwxUOOlpF62KawkFO9.jpg",
+      "backdrop_path": "/bxwKC4qAbceMgHU1xCCTBK1eYdn.jpg",
+      "title": "Gunner",
       "category": "action"
     },
-    {
-      "poster_path": "/u9035lysUz3ccloQt0SeIp1Mu8a.jpg",
-      "title": "Mayhem!",
+
+    { 
+      "id" : "8",
+      "poster_path": "/d9CTnTHip1RbVi2OQbA2LJJQAGI.jpg",
+      "backdrop_path": "/4ft6TR9wA6bra0RLL6G7JFDQ5t1.jpg",
+      "title": "The Union",
       "category": "action"
     },
-    {
+
+    { 
+      "id" : "9",
       "poster_path": "/ggZGnJLzO3BTu7ysuuIzou3Oex5.jpg",
+      "backdrop_path": "/h9YlRHAZWOWtGonllmj6JJg1FrE.jpg",
       "title": "Dragonkeeper",
       "category": "action"
     },
-    {
-      "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
-      "title": "Kingdom of the Planet of the Apes",
-      "category": "action"
-    },
-    {
+    { 
+      "id" : "10",
       "poster_path": "/xYduFGuch9OwbCOEUiamml18ZoB.jpg",
+      "backdrop_path": "/1wP1phHo2CROOqzv7Azs0MT5esU.jpg",
       "title": "The Garfield Movie",
       "category": "action"
     },
 
-    {
+    { 
+      "id" : "11",
       "poster_path": "/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
+      "backdrop_path": "/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg",
       "title": "Despicable Me 4",
       "category": "animation"
     },
-    {
-      "poster_path": "/5wAlO5zZ3IyzLBAf7cp5WejalmG.jpg",
+    {  "id" : "12",
+      "poster_path": "/30YnfZdMNIV7noWLdvmcJS0cbnQ.jpg",
+      "backdrop_path": "/hdFIdXwS8FSN2wIsuotjW1mshI0.jpg",
       "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
       "category": "animation"
     },
-    {
+    { 
+      "id" : "13",
       "poster_path": "/hU42CRk14JuPEdqZG3AWmagiPAP.jpg",
+      "backdrop_path": "/2RVcJbWFmICRDsVxRI8F5xRmRsK.jpg",
       "title": "A Quiet Place: Day One",
       "category": "horror"
     },
 
-    {
+    { 
+      "id" : "14",
       "poster_path": "/fzmQ7mMYlBE8q459F6x9BAGgmj9.jpg",
+      "backdrop_path": "/rSRA1p4e3laAAJflzdgtqNlx27Y.jpg",
       "title": "Darkness of Man",
       "category": "crime"
     },
-    {
+    {  
+      "id" : "15",
       "poster_path": "/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
+      "backdrop_path": "/9BQqngPfwpeAfK7c2H3cwIFWIVR.jpg",
       "title": "It Ends with Us",
       "category": "crime"
     },
 
-    {
+    { 
+      "id" : "16",
+      "poster_path": "/fOsamTFIyGxjw1jLSKdZYxQBJOT.jpg",
+      "backdrop_path": "/pzFbYJfqGKlGxOsDIIsUi6YxVQ.jpg",
+      "title": "Jackpot!",
+      "category":"comedy"
+
+    },
+      
+    {  "id" : "17",
+      "backdrop_path": "/9LsZh2O1sidMvxKuMCI9RDzdZj4.jpg",
+      "poster_path": "/kWwIkWextuqVUvAEM9DwJfEfkKe.jpg",
+      "title": "Crescent City",
+      "category":"crime"
+    },
+
+    {  
+      "id" : "18",
       "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+      "backdrop_path": "/3q01ACG0MWm0DekhvkPFCXyPZSu.jpg",
       "title": "Bad Boys: Ride or Die",
       "category": "crime"
     },
 
-    {
+    { 
+      "id" : "19",
       "poster_path": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
+      "backdrop_path": "/9SSEUrSqhljBMzRe4aBTh17rUaC.jpg",
       "title": "Alien: Romulus",
       "category": "science"
     },
-    {
-      "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
-      "title": "Kingdom of the Planet of the Apes",
-      "category": "science"
+        
+    {  
+      "id" : "20",
+      "poster_path": "/zKpLzzX1va6gkMJiI9p3DudqChe.jpg",
+       "backdrop_path": "/o2bgWqHsu2bZo94RgxGKfvd0PYS.jpg",
+       "title": "Monolith",
+       "category":"dramatic"
+
     }
+   
   ]
 }

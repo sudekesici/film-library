@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchMovies } from '../redux/moviesSlice';
 import "../css/sidebar.css"
 
-const Sidebar = () => {
+const Sidebar = ({ searchTerm }) => {
   const dispatch = useDispatch();
   const { movies, status } = useSelector((state) => state.movies);
 
@@ -19,6 +19,7 @@ const Sidebar = () => {
     return <div>Failed to load movies.</div>;
   }
 
+
   const categorizedMovies = movies.reduce((acc, movie) => {
     if (!acc[movie.category]) {
       acc[movie.category] = [];
@@ -27,13 +28,26 @@ const Sidebar = () => {
     return acc;
   }, {});
 
+  // sadece yeni olan bu 
+  const filteredCategories = Object.keys(categorizedMovies).reduce((acc, category) => {
+    const filteredMovies = categorizedMovies[category].filter((movie) =>
+      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    if (filteredMovies.length > 0) {
+      acc[category] = filteredMovies;
+    }
+
+    return acc;
+  }, {});
+
   return (
     <div className='sidebar'>
-      {Object.keys(categorizedMovies).map((category) => (
+      {Object.keys(filteredCategories).map((category) => (
         <div key={category}>
           <h3 className='sidebarTitle'>{category}</h3>
-          {categorizedMovies[category].map((movie) => (
-            <button key={movie.title} className='sidebarButton'>
+          {filteredCategories[category].map((movie) => (
+            <button key={movie.id} className='sidebarButton'>
               {movie.title}
             </button>
           ))}
