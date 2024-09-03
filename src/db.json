@@ -5,14 +5,21 @@
       "poster_path": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
       "backdrop_path": "/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg",
       "title": "Deadpool & Wolverine",
-      "category": "comedy"
+      "category": "comedy",
+      "date": "2024",
+      "score": "78",
+      "overview": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine."
+
     },
     {  
       "id" : "2",
       "poster_path": "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
       "backdrop_path": "/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg",
       "title": "Inside Out 2",
-      "category": "comedy"
+      "category": "comedy",
+      "date": "2024",
+       "score": "77",
+       "overview": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone."
     },
   
     { 
@@ -20,7 +27,11 @@
       "poster_path": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
       "backdrop_path": "/7aPrv2HFssWcOtpig5G3HEVk3uS.jpg",
       "title": "Twisters",
-      "category": "comedy"
+      "category": "comedy",
+      "date": "2024",
+      "score": "75",
+      "overview": "As storm season intensifies, the paths of former storm chaser Kate Carter and reckless social-media superstar Tyler Owens collide when terrifying phenomena never seen before are unleashed. The pair and their competing teams find themselves squarely in the paths of multiple storm systems converging over central Oklahoma in the fight of their lives."
+
     },
     
     {  
@@ -28,7 +39,10 @@
       "poster_path": "/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
       "backdrop_path": "/okVLmXL5y18dfN2R4ufMZEGaeCd.jpg",
       "title": "Kill",
-      "category": "action"
+      "category": "action",
+      "date": "2023",
+       "score": "70",
+       "overview": "When an army commando finds out his true love is engaged against her will, he boards a New Dehli-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves begin to terrorize innocent passengers on his train, the commando takes them on himself in a death-defying kill-spree to save those around him — turning what should have been a typical commute into an adrenaline-fueled thrill ride."
     },
        
     { 
@@ -36,7 +50,11 @@
       "poster_path": "/5aj8vVGFwGVbQQs26ywhg4Zxk2L.jpg",
       "backdrop_path": "/lkmkNVFGsRVKZs1MqKbE6zabXc4.jpg",
       "title": "Longlegs",
-      "category":"horror"
+      "category":"horror",
+      "date": "2024",
+       "score": "65",
+       "overview": "FBI Agent Lee Harker is assigned to an unsolved serial killer case that takes an unexpected turn, revealing evidence of the occult. Harker discovers a personal connection to the killer and must stop him before he strikes again."
+
     },
 
     { 
@@ -44,7 +62,10 @@
       "poster_path": "/5wAlO5zZ3IyzLBAf7cp5WejalmG.jpg",
        "backdrop_path": "/n3JeGELHa9V6k9mL81ItMxWLSS6.jpg",
       "title": "Prey",
-      "category": "action"
+      "category": "action",
+      "date": "2022",
+       "score": "78",
+        "overview": "A young couple is compelled to leave their Christian missionary station in the Kalahari Desert after being threatened with death by an extremist militant gang. After crashing their aircraft they must battle man and beast for their lives."
     },
 
     { 
@@ -52,7 +73,10 @@
       "poster_path": "/eEkAY5veAnwxUOOlpF62KawkFO9.jpg",
       "backdrop_path": "/bxwKC4qAbceMgHU1xCCTBK1eYdn.jpg",
       "title": "Gunner",
-      "category": "action"
+      "category": "action",
+      "date": "2024",
+       "score": "78",
+       "overview": "While on a camping trip in order to reconnect, war veteran Colonel Lee Gunner must save his two sons from a gang of violent bikers when they're kidnapped after accidentally stumbling upon to a massive drug operation."
     },
 
     { 
@@ -60,7 +84,11 @@
       "poster_path": "/d9CTnTHip1RbVi2OQbA2LJJQAGI.jpg",
       "backdrop_path": "/4ft6TR9wA6bra0RLL6G7JFDQ5t1.jpg",
       "title": "The Union",
-      "category": "action"
+      "category": "action",
+      "date": "2024",
+      "score": "81",
+      "overview": "A New Jersey construction worker goes from regular guy to aspiring spy when his long-lost high school sweetheart recruits him for an espionage mission."
+
     },
 
     { 
@@ -68,14 +96,23 @@
       "poster_path": "/ggZGnJLzO3BTu7ysuuIzou3Oex5.jpg",
       "backdrop_path": "/h9YlRHAZWOWtGonllmj6JJg1FrE.jpg",
       "title": "Dragonkeeper",
-      "category": "action"
+      "category": "action",
+      "date": "2024",
+      "score": "78",
+      "original_title": "Dragonkeeper",
+      "overview": "Set in Han Imperial China, the plot follows the adventures of enslaved girl Ping with ancient dragon Long Danzi. Dragons had been banished from the kingdom. Ping, an orphan, finds one of the last remaining dragon eggs. Palace guards force Ping to run away in order to return the dragon egg to the ocean and save all dragons from extinction. Ping discovers that she is a true Dragonkeeper."
+
     },
     { 
       "id" : "10",
       "poster_path": "/xYduFGuch9OwbCOEUiamml18ZoB.jpg",
       "backdrop_path": "/1wP1phHo2CROOqzv7Azs0MT5esU.jpg",
       "title": "The Garfield Movie",
-      "category": "action"
+      "category": "animation",
+      "date": "2024",
+       "score": "76",
+        "overview": "Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist."
+
     },
 
     { 
@@ -83,20 +120,29 @@
       "poster_path": "/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
       "backdrop_path": "/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg",
       "title": "Despicable Me 4",
-      "category": "animation"
+      "category": "animation",
+      "date": "2024",
+       "score": "73",
+       "overview": "Gru and Lucy and their girls—Margo, Edith and Agnes—welcome a new member to the Gru family, Gru Jr., who is intent on tormenting his dad. Gru also faces a new nemesis in Maxime Le Mal and his femme fatale girlfriend Valentina, forcing the family to go on the run."
     },
     {  "id" : "12",
       "poster_path": "/30YnfZdMNIV7noWLdvmcJS0cbnQ.jpg",
       "backdrop_path": "/hdFIdXwS8FSN2wIsuotjW1mshI0.jpg",
       "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
-      "category": "animation"
+      "category": "animation",
+      "date": "2024",
+       "score": "74",
+       "overview": "When Bikini Bottom is scooped from the ocean, scientific squirrel Sandy Cheeks and her pal SpongeBob SquarePants saddle up for Texas to save their town."
     },
     { 
       "id" : "13",
       "poster_path": "/hU42CRk14JuPEdqZG3AWmagiPAP.jpg",
       "backdrop_path": "/2RVcJbWFmICRDsVxRI8F5xRmRsK.jpg",
       "title": "A Quiet Place: Day One",
-      "category": "horror"
+      "category": "horror",
+      "date": "2024",
+       "score": "75",
+       "overview": "As New York City is invaded by alien creatures who hunt by sound, a woman named Sam fights to survive with her cat."
     },
 
     { 
@@ -104,14 +150,21 @@
       "poster_path": "/fzmQ7mMYlBE8q459F6x9BAGgmj9.jpg",
       "backdrop_path": "/rSRA1p4e3laAAJflzdgtqNlx27Y.jpg",
       "title": "Darkness of Man",
-      "category": "crime"
+      "category": "crime",
+      "date": "2024",
+      "score": "78",
+      "overview": "Russell Hatch, an Interpol operative who takes on the role of father figure to Jayden, the son of an informant killed in a routine raid gone wrong. Years later, Hatch finds himself protecting Jayden and his grandfather from a group of merciless gangs in an all-out turf war, stopping at nothing to protect Jayden and fight anyone getting in his way."
+
     },
     {  
       "id" : "15",
       "poster_path": "/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
       "backdrop_path": "/9BQqngPfwpeAfK7c2H3cwIFWIVR.jpg",
       "title": "It Ends with Us",
-      "category": "crime"
+      "category": "crime",
+      "date": "2024",
+       "score": "78",
+        "overview": "When a woman's first love suddenly reenters her life, her relationship with a charming, but abusive neurosurgeon is upended, and she realizes she must learn to rely on her own strength to make an impossible choice for her future."
     },
 
     { 
@@ -119,15 +172,21 @@
       "poster_path": "/fOsamTFIyGxjw1jLSKdZYxQBJOT.jpg",
       "backdrop_path": "/pzFbYJfqGKlGxOsDIIsUi6YxVQ.jpg",
       "title": "Jackpot!",
-      "category":"comedy"
-
+      "category":"comedy",
+      "date": "2024",
+       "score": "78",
+       "overview": "In the near future, a 'Grand Lottery' has been established - the catch: kill the winner before sundown to legally claim their multi-billion dollar jackpot. When Katie Kim mistakenly finds herself with the winning ticket, she reluctantly joins forces with amateur lottery protection agent Noel Cassidy who must get her to sundown in exchange for a piece of her prize."
     },
       
     {  "id" : "17",
       "backdrop_path": "/9LsZh2O1sidMvxKuMCI9RDzdZj4.jpg",
       "poster_path": "/kWwIkWextuqVUvAEM9DwJfEfkKe.jpg",
       "title": "Crescent City",
-      "category":"crime"
+      "category":"crime",
+      "date": "2020",
+       "score": "78",
+       "overview": "When a ruthless serial killer terrorizes a small Southern town, everyone becomes a suspect -- including local authorities. As the body count rises and the dark mystery deepens, the chief detective becomes haunted by the horrors of his past."
+
     },
 
     {  
@@ -135,7 +194,10 @@
       "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
       "backdrop_path": "/3q01ACG0MWm0DekhvkPFCXyPZSu.jpg",
       "title": "Bad Boys: Ride or Die",
-      "category": "crime"
+      "category": "crime",
+      "date": "2024",
+       "score": "76",
+       "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves."
     },
 
     { 
@@ -143,7 +205,11 @@
       "poster_path": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
       "backdrop_path": "/9SSEUrSqhljBMzRe4aBTh17rUaC.jpg",
       "title": "Alien: Romulus",
-      "category": "science"
+      "category": "science",
+       "date": "2024",
+       "score": "76",
+        "overview": "While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life form in the universe."
+      
     },
         
     {  
@@ -151,8 +217,10 @@
       "poster_path": "/zKpLzzX1va6gkMJiI9p3DudqChe.jpg",
        "backdrop_path": "/o2bgWqHsu2bZo94RgxGKfvd0PYS.jpg",
        "title": "Monolith",
-       "category":"dramatic"
-
+       "category":"dramatic",
+       "date": "2022",
+       "score": "76",
+       "overview": "A desperate young journalist turns to podcasting to salvage her career, but her rush to make headlines leads her to an alien conspiracy."
     }
    
   ]

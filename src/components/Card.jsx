@@ -6,7 +6,7 @@ function Card({ movie }) {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <Link className='card' to={`/movie-details/${movie.id}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <Link className='card' to={`/movie-details/${movie.id}`}  onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div>
                 <img
                     

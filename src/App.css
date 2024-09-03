@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 body{
@@ -39,6 +42,7 @@ ul{
 .flexRow{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .container{
     max-width: 100%;
@@ -62,8 +66,67 @@ ul{
     padding: 10px;
 }
 
-.sidebarvesearch{
+.sidebar-search{
   display: flex;
   flex-direction: column;
 }
 
+.movieDetailContainer {
+    display: flex;
+    align-items: center; 
+    padding: 20px; 
+
+}
+
+.contentMovie {
+    display: flex;
+    align-items: flex-start; 
+}
+.poster img {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.movieDetails {
+    margin-left: 20px;
+    color: white; 
+}
+
+.titleAndDate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.movietitle {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-right: 15px; 
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.date {
+    font-size: 18px;
+    color: #ccc; 
+}
+
+.score {
+    width:50px;
+    font-size: 20px;
+    padding: 11px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-weight: bold;
+    margin-top:15px;
+    
+   
+}
+
+.overview {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width:900px;
+    font-weight: 400;
+}

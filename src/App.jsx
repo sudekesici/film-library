@@ -15,7 +15,7 @@ function App() {
       <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
         <Header searchTerm={searchTermHeader} setSearchTerm={setSearchTermHeader} />
         <div style={{ flex: 1, display: 'flex', flexDirection: 'row' }}>
-          <div className='sidebarvesearch'>
+          <div className='sidebar-search'>
             <input 
               type="text" 
               placeholder="Search Sidebar.." 
