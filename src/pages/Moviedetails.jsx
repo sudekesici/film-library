@@ -2,6 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import "../App.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Moviedetails() {
   const movies = useSelector((state) => state.movies.movies);
@@ -50,6 +53,14 @@ function Moviedetails() {
       
                 <div style={{fontSize:"20px", fontWeight:"bolder", marginBottom:"5px", marginTop:"35px"}}>Summary</div>
                 <div className="overview">{movie.overview}</div>
+                
+                
+                <Link className="video "to={`/video/${movie.id}`}>
+                      <FontAwesomeIcon icon={faPlay} style={{ color: '#ffffff', marginTop: '3px' }} />
+                      <p>Play Trailer</p>
+               </Link>
+                   
+                
       
               </div>
       

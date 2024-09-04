@@ -17,7 +17,10 @@ function Card({ movie }) {
             onMouseLeave={() => setIsHovered(false)}
         > 
             <div className={`card-container ${isHovered ? 'hovered' : 'normal'}`}  style={{backgroundImage}} >
+                <div style={{background:"linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%)", width:"100%", display:"flex",justifyContent:"flex-start",padding:"5px", height:"auto"}} >
                 <p>{movie.title}</p>
+                </div>
+               
             </div>
         </Link>
     );

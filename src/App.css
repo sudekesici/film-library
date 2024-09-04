@@ -126,3 +126,14 @@ ul{
     font-weight: 400;
 }
 
+.video{
+    display: flex;
+    margin-top: 35px;
+}
+
+.video p{
+    color: #fff;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+}
