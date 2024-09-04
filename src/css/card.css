@@ -1,7 +1,28 @@
-.card{
+.card {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin:20px;
-    
+    margin: 20px;
+}
+
+.card-container {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    background-size: cover; /* Arka planı kapsayıcıya göre ayarladım */
+    background-position: center; /* resmin tam ortasını aldım */
+    background-repeat: no-repeat; /* ne alaka tekrarmıs */
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    transition: background-image 0.5s ease; /
+}
+
+.card-container p {
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }

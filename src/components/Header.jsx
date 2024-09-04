@@ -12,8 +12,8 @@ function Header({ searchTerm, setSearchTerm }) {
             <img src={logo} alt="" />
           </div>
           <ul className='flexSB'>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/series'}>Series</Link>
+            <Link to={'/'} className='headerButton'>Home</Link>
+            <Link to={'/series'} className='headerButton'>Series</Link>
           </ul>
         </nav>
         <div className='' style={{ marginRight: "10px", backgroundColor: "black" }}>
@@ -22,9 +22,9 @@ function Header({ searchTerm, setSearchTerm }) {
             placeholder='Search Movies..' 
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            style={{ color: "#fff", backgroundColor: "black", border: "none", outline: "none", padding: '10px', width: '200px' }} 
+            style={{ color: "#fff", backgroundColor: "black", border: "none", outline: "none", padding: '10px', width: '170px' }} 
           />
-          <a href=""><i className='fa fa-search'></i></a>
+          <a href="" className='headerİcon'><i className='fa fa-search'></i></a>
         </div>
       </div>
     </header>

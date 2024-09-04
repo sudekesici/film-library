@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchMovies } from '../redux/moviesSlice';
 import "../css/sidebar.css"
 
-const Sidebar = ({ searchTerm }) => {
+const Sidebar = ({ searchTerm, setSearchTerm }) => {
   const dispatch = useDispatch();
   const { movies, status } = useSelector((state) => state.movies);
 
@@ -42,7 +42,21 @@ const Sidebar = ({ searchTerm }) => {
   }, {});
 
   return (
-    <div className='sidebar'>
+
+    <div >
+        
+        <div className='flexRow search'>
+            <input 
+              type="text" 
+              placeholder="Search Movies.." 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              style={{ color: "rgb(255, 255, 255)", backgroundColor: "black", border: "none", outline: "none", width: "250px", margin: "24px 20px", padding: "10px" }} 
+            />
+              <a href="" className='sidebarİcon'><i className='fa fa-search'></i></a>
+         </div>
+
+        <div className='sidebar'>
       {Object.keys(filteredCategories).map((category) => (
         <div key={category}>
           <h3 className='sidebarTitle'>{category}</h3>
@@ -53,7 +67,10 @@ const Sidebar = ({ searchTerm }) => {
           ))}
         </div>
       ))}
+      </div>
+
     </div>
+   
   );
 };
 
