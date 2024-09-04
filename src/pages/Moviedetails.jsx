@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import "../App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import Modal from '../components/Modal';
+import "../App.css";
 
 function Moviedetails() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const movies = useSelector((state) => state.movies.movies);
   const { id } = useParams();  
   const movie = movies.find((movie) => movie.id === id);
 
+  const handlePlayTrailer = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       {movie ? (
-     <div>
-     {movie ? (
-          <div className="movieDetailContainer" style={{ position: 'relative', height: '500px', marginRight: '20px', marginTop: '25px' }}>
-         
-          {/* sadece opaklık için ekledm*/}
-            <div 
+        <div className="movieDetailContainer" style={{ position: 'relative', height: '500px', marginRight: '20px', marginTop: '25px' }}>
+          {/* sadece opaklık için ekledim */}
+          <div 
               style={{ 
                 backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/${movie.backdrop_path}')`, 
                 backgroundSize: 'cover',
@@ -34,49 +40,46 @@ function Moviedetails() {
                 zIndex: -1 
               }}
             />
-            
-           
-            <div className="contentMovie" style={{ position: 'relative', zIndex: 1}}>
+
+          <div className="contentMovie" style={{ position: 'relative', zIndex: 1 }}>
+            <div className="poster">
+              <img src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={movie.title} />
+            </div>
       
-              <div className="poster">
-                <img src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={movie.title} />
+            <div className="movieDetails">
+
+              <div className="titleAndDate">
+                <div className="movietitle">{movie.title}</div>
+                <div className="date">{movie.date}</div>
               </div>
-      
-              <div className="movieDetails">
-      
-                <div className="titleAndDate">
-                  <div className="movietitle">{movie.title}</div>
-                  <div className="date">{movie.date}</div>
-                </div>
-      
-                <div className="score">{movie.score}</div>
-      
-                <div style={{fontSize:"20px", fontWeight:"bolder", marginBottom:"5px", marginTop:"35px"}}>Summary</div>
-                <div className="overview">{movie.overview}</div>
-                
-                
-                <Link className="video "to={`/video/${movie.id}`}>
-                      <FontAwesomeIcon icon={faPlay} style={{ color: '#ffffff', marginTop: '3px' }} />
-                      <p>Play Trailer</p>
-               </Link>
-                   
-                
-      
+
+              <div className="score">{movie.score}</div>
+
+              <div style={{fontSize:"20px", fontWeight:"bolder", marginBottom:"5px", marginTop:"35px"}}>Summary</div>
+              <div className="overview">{movie.overview}</div>
+              
+              <div className='video'>
+                <button onClick={handlePlayTrailer} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                  <FontAwesomeIcon icon={faPlay} style={{ color: '#ffffff' }} />
+                </button>
+                <p>Play Trailer</p>
               </div>
-      
+              
             </div>
           </div>
-     ) : null}
-   </div>
-  
 
-
+          {/* Modal Bileşenini burada çağırıyoruz */}
+          <Modal 
+            isOpen={isModalOpen} 
+            onClose={handleCloseModal} 
+            videoUrl={`https://www.youtube.com/embed/${movie.video}`} 
+          />
+        </div>
       ) : (
         <p style={{color:'#fff'}}>No movie found</p>
       )}
     </div>
   );
-  
+}
 
-
-}export default Moviedetails;
+export default Moviedetails;
