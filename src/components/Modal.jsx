@@ -9,7 +9,7 @@ function Modal({ isOpen, onClose, videoUrl }) {
       <div className="modal-content">
         <button className="close-button" onClick={onClose}>X</button>
         
-        <h2>Fragman</h2>
+        <h2>Play Trailer</h2>
 
         <hr style={{marginBottom:"10px", borderColor:"red"}}></hr>
        
@@ -19,7 +19,6 @@ function Modal({ isOpen, onClose, videoUrl }) {
           height="472" 
           src={videoUrl} 
           title="Trailer" 
-          frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowFullScreen
         ></iframe>

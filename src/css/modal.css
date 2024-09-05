@@ -4,13 +4,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(230, 6, 6, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(230, 6, 6, 0.5) );
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
   }
-  
   .modal-content {
     background: black;
     padding: 20px;
@@ -35,4 +34,7 @@
     font-size: 20px;
   }
   
+  iframe{
+    border: none;
+  }
   

@@ -52,23 +52,25 @@ function Moviedetails() {
                 <div className="movietitle">{movie.title}</div>
                 <div className="date">{movie.date}</div>
               </div>
-
+              
+              
               <div className="score">{movie.score}</div>
+             
 
               <div style={{fontSize:"20px", fontWeight:"bolder", marginBottom:"5px", marginTop:"35px"}}>Summary</div>
               <div className="overview">{movie.overview}</div>
               
-              <div className='video'>
-                <button onClick={handlePlayTrailer} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+              
+                <button className='video' onClick={handlePlayTrailer} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
                   <FontAwesomeIcon icon={faPlay} style={{ color: '#ffffff' }} />
+                  <p>Play Trailer</p>
                 </button>
-                <p>Play Trailer</p>
-              </div>
+             
               
             </div>
           </div>
 
-          {/* Modal Bileşenini burada çağırıyoruz */}
+          {/* Modal çağırdım yerinin tasarımsal acidn onemi yok */}
           <Modal 
             isOpen={isModalOpen} 
             onClose={handleCloseModal} 
