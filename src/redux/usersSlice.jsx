@@ -49,6 +49,8 @@ const usersSlice = createSlice({
       .addCase(login.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.currentUser = action.payload;
+        localStorage.setItem("username", action.payload.username)
+        localStorage.setItem("password", action.payload.password)
       })
       .addCase(login.rejected, (state, action) => {
         state.status = 'failed';

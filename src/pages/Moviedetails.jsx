@@ -62,7 +62,7 @@ function Moviedetails() {
               
               
                 <button className='video' onClick={handlePlayTrailer} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-                  <FontAwesomeIcon icon={faPlay} style={{ color: '#ffffff' }} />
+                  <FontAwesomeIcon icon={faPlay} style={{ color: '#ffffff', marginTop:"5px" }} />
                   <p>Play Trailer</p>
                 </button>
              
