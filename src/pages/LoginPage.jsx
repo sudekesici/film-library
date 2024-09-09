@@ -6,6 +6,7 @@ import "../css/loginpage.css"
 import loginLogo from '../img/loginLogo.png';
 
 
+
 function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -18,17 +19,17 @@ function LoginPage() {
   };
 
   return (
-    <div class="loginPage">
-  <div class="linear"></div>
-  <div class="overlay"></div>
+    <div className="loginPage">
+  <div className="linear"></div>
+  <div className="overlay"></div>
 
-  <div class="content">
-    <div class="information">
+  <div className="content">
+    <div className="information">
       <div style={{color:"#fff",fontWeight:"500", fontSize:"51px",marginBottom:"10px",width:"auto",height:"auto",fontFamily:""}}>Unlimited movies, series and much more</div>
       <p style={{color:"#ccc", fontSize:"20px",width:"auto",height:"auto"}}>Prices starting at 149.99 TL. Cancel anytime.</p>
     </div>
 
-    <div class="input-container">
+    <div className="input-container">
       <img src={loginLogo} alt="login logo" />
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "30px" }}>
         <h2>Welcome Back!</h2>
