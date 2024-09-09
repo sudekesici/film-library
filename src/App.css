@@ -1,7 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*{
+
+/* Scrollbar genel stili */
+::-webkit-scrollbar {
+    width: 8px; /* Dikey scroll genişliği */
+    height: 8px; /* Yatay scroll yüksekliği */
+}
+
+/* Scrollbar track (arka plan) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb (kayan kısım) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb hover efekti */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,12 +75,24 @@ ul{
 }
 
 .homeTitle{
- color: #fff;
- font-family: "Open Sans", sans-serif;
- font-size: 30px;
- font-weight: 300 ;
- letter-spacing: 2px;
- margin:20px 40px;
+
+ margin:20px 30px;
+ position: fixed;
+ z-index: 1000;
+ top: 80px;
+ width: 1380px;
+ background-color: #141414 ;
+ height: 111px;
+
+}
+
+.homeTitle h2{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300 ;
+    letter-spacing: 2px;
+    margin-top: 24px;
 }
 
 .homeContainer{
@@ -64,6 +100,7 @@ ul{
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 10px;
+    margin-top: 80px ;
 }
 
 .movieDetailContainer {

@@ -13,7 +13,9 @@ function HomePage({ searchTerm }) {
 
     return (
         <div>
-            <div className='homeTitle'>ALL MOVIES</div>
+            <div className='homeTitle'>
+               <h2>ALL MOVIES</h2> 
+             </div>
             <div className='homeContainer'>
                 {filteredMovies.length > 0 ? (
                     filteredMovies.map((movie) => (

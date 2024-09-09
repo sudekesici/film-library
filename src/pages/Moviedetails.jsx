@@ -23,7 +23,7 @@ function Moviedetails() {
   return (
     <div>
       {movie ? (
-        <div className="movieDetailContainer" style={{ position: 'relative', height: '500px', marginRight: '20px', marginTop: '25px' }}>
+        <div className="movieDetailContainer" style={{ position: 'relative', height: '500px', marginRight: '20px', marginTop: '23px' }}>
           {/* sadece opaklık için ekledim */}
           <div 
               style={{ 

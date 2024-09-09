@@ -1,8 +1,9 @@
 .card {
+   
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin: 20px;
+    margin:20px;
 }
 
 .card-container {

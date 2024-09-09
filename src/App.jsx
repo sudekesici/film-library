@@ -6,10 +6,9 @@ import './css/sidebar.css';
 import LoginPage from './pages/LoginPage';
 import Moviedetails from './pages/Moviedetails';
 import CardsPage from './pages/CardsPage';
-import Sidebar from './components/Sidebar'; 
+import Sidebar from './components/SideBar'
 import Header from './components/Header'; 
 import { login } from './redux/usersSlice';
-
 
 function App() {
   const dispatch = useDispatch();
@@ -21,7 +20,6 @@ function App() {
     const username = localStorage.getItem('username');
     const password = localStorage.getItem('password');
 
-    
     if (username && password) {
       dispatch(login({ username, password }));
     }
@@ -29,25 +27,17 @@ function App() {
 
   return (
     <Router>
-      <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
-     
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', paddingTop: '100px' }}>
         {user ? (
-
-          
-           
-          <div style={{display: 'flex', flexDirection: 'column' }}>
-              <Header searchTerm={searchTermHeader} setSearchTerm={setSearchTermHeader} />
-           
-            <div style={{display: 'flex', flexDirection: 'row' }}>
-          
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <Header searchTerm={searchTermHeader} setSearchTerm={setSearchTermHeader} />
             <Sidebar searchTerm={searchTermSidebar} setSearchTerm={setSearchTermSidebar} />
-              <div style={{ overflowY: 'auto' }}>
-                <Routes>
-                  <Route path="/" element={<CardsPage searchTerm={searchTermHeader} />} />
-                  <Route path="/movie-details/:id" element={<Moviedetails />} />
-                  <Route path="*" element={<Navigate to="/" />} />
-                </Routes>
-              </div>
+            <div style={{ marginLeft: '287px', flex: 1, overflowY: 'auto' }}>
+              <Routes>
+                <Route path="/" element={<CardsPage searchTerm={searchTermHeader} />} />
+                <Route path="/movie-details/:id" element={<Moviedetails />} />
+                <Route path="*" element={<Navigate to="/" />} />
+              </Routes>
             </div>
           </div>
         ) : (

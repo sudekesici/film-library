@@ -1,17 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 header {
   height: 100px;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-color: black;
   color: #fff;
   border-bottom: 1px solid rgb(169, 11, 11);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
 }
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px; 
+}
+
 .logo img {
   width: 90px;
   margin-top: 0;
   margin-right: 30px;
 }
 
-.headerButton{
+.headerButton {
   color: #fff;
   margin-left: 30px;
   font-size: 20px;
@@ -19,7 +30,7 @@ header {
   font-weight: 400;
 }
 
-.headerİcon{
+.headerİcon {
   color: #fff;
   margin-left: 18px;
   font-size: 20px;
@@ -34,9 +45,9 @@ header i {
   text-align: center;
   margin: 5px 0;
 }
+
 header button {
   border-radius: 10px;
   font-size: 15px;
   font-weight: bold;
 }
-
