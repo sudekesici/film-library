@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchMovies } from '../redux/moviesSlice';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import "../css/sidebar.css";
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ searchTerm, setSearchTerm }) => {
   const dispatch = useDispatch();
   const { movies, status } = useSelector((state) => state.movies);
-  
 
   useEffect(() => {
     dispatch(fetchMovies());
@@ -22,6 +22,7 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
   }
 
   const categorizedMovies = movies.reduce((acc, movie) => {
+    if (!movie.category) return acc; // Eğer category undefined ise atla
     if (!acc[movie.category]) {
       acc[movie.category] = [];
     }
@@ -31,7 +32,7 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
 
   const filteredCategories = Object.keys(categorizedMovies).reduce((acc, category) => {
     const filteredMovies = categorizedMovies[category].filter((movie) =>
-      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+      movie.title?.toLowerCase().includes(searchTerm?.toLowerCase()) // title undefined ise atla
     );
 
     if (filteredMovies.length > 0) {
@@ -55,11 +56,13 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
             border: "none",
             outline: "none",
             width: "250px",
-            margin: "24px 20px",
-            padding: "10px",
+            height: "50px",
+            margin: "18px 20px",
+            paddingLeft: "21px",
+            fontSize: "16px"
           }}
         />
-        <a href="" className='sidebarİcon'><i className='fa fa-search'></i></a>
+        <a href="#" className='sidebarIcon'><i className='fa fa-search'></i></a>
       </div>
 
       <Scrollbars
@@ -72,9 +75,9 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
             <div key={category}>
               <h3 className='sidebarTitle'>{category}</h3>
               {filteredCategories[category].map((movie) => (
-                <button key={movie.id} className='sidebarButton' >
+                <Link key={movie.id} className='sidebarButton' to={`/movie-details/${movie.id}`}>
                   {movie.title}
-                </button>
+                </Link>
               ))}
             </div>
           ))}

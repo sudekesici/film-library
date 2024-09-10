@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import './App.css';
@@ -6,8 +6,8 @@ import './css/sidebar.css';
 import LoginPage from './pages/LoginPage';
 import Moviedetails from './pages/Moviedetails';
 import CardsPage from './pages/CardsPage';
-import Sidebar from './components/SideBar'
-import Header from './components/Header'; 
+import Sidebar from './components/SideBar';
+import Header from './components/Header';
 import { login } from './redux/usersSlice';
 
 function App() {
@@ -17,18 +17,23 @@ function App() {
   const [searchTermHeader, setSearchTermHeader] = useState('');
 
   useEffect(() => {
-    const username = localStorage.getItem('username');
-    const password = localStorage.getItem('password');
+    const isLogin = localStorage.getItem('isLogin');
 
-    if (username && password) {
-      dispatch(login({ username, password }));
+    if (isLogin === 'true') {
+      const username = localStorage.getItem('username');
+      const password = localStorage.getItem('password');
+      if (username && password) {
+        dispatch(login({ username, password }));
+      }
     }
   }, [dispatch]);
 
+  const isLoggedIn = localStorage.getItem('isLogin') === 'true';
+
   return (
     <Router>
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', paddingTop: '100px' }}>
-        {user ? (
+      {isLoggedIn ? (
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', paddingTop:"100px"}}>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <Header searchTerm={searchTermHeader} setSearchTerm={setSearchTermHeader} />
             <Sidebar searchTerm={searchTermSidebar} setSearchTerm={setSearchTermSidebar} />
@@ -40,13 +45,15 @@ function App() {
               </Routes>
             </div>
           </div>
-        ) : (
+        </div>
+      ) : (
+        <div style={{ Height: '100vh' }}>
           <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="*" element={<Navigate to="/login" />} />
           </Routes>
-        )}
-      </div>
+        </div>
+      )}
     </Router>
   );
 }

@@ -7,7 +7,7 @@
   background-color: black;
   margin: 20px;
   position: fixed; 
-  top: 188px; 
+  top: 130px; 
   left: 0;
   height: calc(100vh - 100px); 
   overflow-y: auto;
@@ -72,7 +72,7 @@
   color: #fff;
 }
 
-.sidebarİcon {
+.sidebarIcon {
   color: #fff;
   margin-left: -54px;
   font-size: 20px;

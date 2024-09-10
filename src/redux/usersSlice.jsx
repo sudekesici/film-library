@@ -26,6 +26,8 @@ export const login = createAsyncThunk(
         return thunkAPI.rejectWithValue('Geçersiz kullanıcı adı veya şifre');
       }
 
+      
+      localStorage.setItem('isLogin', 'true');
       return user;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -33,12 +35,24 @@ export const login = createAsyncThunk(
   }
 );
 
+export const logout = () => (dispatch) => {
+  localStorage.removeItem('isLogin');
+  localStorage.removeItem('username');
+  localStorage.removeItem('password');
+  dispatch({ type: 'users/logout' });
+};
+
 const usersSlice = createSlice({
   name: 'users',
   initialState: {
     currentUser: null,
     status: 'idle',
     error: null,
+  },
+  reducers: {
+    logout: (state) => {
+      state.currentUser = null;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -49,8 +63,6 @@ const usersSlice = createSlice({
       .addCase(login.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.currentUser = action.payload;
-        localStorage.setItem("username", action.payload.username)
-        localStorage.setItem("password", action.payload.password)
       })
       .addCase(login.rejected, (state, action) => {
         state.status = 'failed';
