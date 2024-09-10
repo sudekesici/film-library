@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+
 export const fetchUsers = createAsyncThunk(
   'users/fetchUsers',
   async () => {
@@ -35,12 +36,6 @@ export const login = createAsyncThunk(
   }
 );
 
-export const logout = () => (dispatch) => {
-  localStorage.removeItem('isLogin');
-  localStorage.removeItem('username');
-  localStorage.removeItem('password');
-  dispatch({ type: 'users/logout' });
-};
 
 const usersSlice = createSlice({
   name: 'users',
@@ -52,6 +47,9 @@ const usersSlice = createSlice({
   reducers: {
     logout: (state) => {
       state.currentUser = null;
+      localStorage.removeItem('isLogin');
+      localStorage.removeItem('username');
+      localStorage.removeItem('password');
     },
   },
   extraReducers: (builder) => {
@@ -71,4 +69,5 @@ const usersSlice = createSlice({
   },
 });
 
+export const { logout } = usersSlice.actions;
 export default usersSlice.reducer;

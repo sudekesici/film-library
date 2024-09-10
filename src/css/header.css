@@ -51,3 +51,13 @@ header button {
   font-size: 15px;
   font-weight: bold;
 }
+
+.icons{
+  margin-left: 20px;
+}
+
+.icons a{
+  margin: 10px;
+  color: #fff;
+}
+

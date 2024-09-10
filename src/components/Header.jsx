@@ -10,9 +10,6 @@ function Header({ searchTerm, setSearchTerm }) {
   const dispatch = useDispatch();
   
  const handleLogout = () => {
-  localStorage.removeItem('islogin')
-  localStorage.removeItem('username')
-  localStorage.removeItem('password')
   dispatch(logout());
   navigate('/login');
   window.location.reload();
@@ -42,10 +39,10 @@ function Header({ searchTerm, setSearchTerm }) {
           <a href="" className='headerİcon'><i className='fa fa-search'></i></a>
           </div>
          
-          <div className='icons flexRow' style={{marginLeft:"20px"}}>
-          <a href="#" onClick={handleLogout}><i className="fa-solid fa-arrow-left" style={{ color: "#ffffff" }}></i></a>
-          <a href=""><i className="fa-solid fa-bell" style={{color: "#ffffff"}}></i></a>
-          <a href=""><i className="fa-solid fa-user" style={{color: "#ffffff"}}></i></a>
+          <div className='icons flexRow'>
+          <a href="#" onClick={handleLogout}><i className="fa-solid fa-arrow-left"></i></a>
+          <a href=""><i className="fa-solid fa-bell" ></i></a>
+          <a href=""><i className="fa-solid fa-user"></i></a>
           </div>
         </div>
       </div>
