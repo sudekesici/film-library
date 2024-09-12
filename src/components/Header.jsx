@@ -3,17 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import '../css/header.css';
 import logo from '../img/logo.png';
 import { useDispatch } from 'react-redux';
-import { logout } from '../redux/usersSlice'; 
+
 
 function Header({ searchTerm, setSearchTerm }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
- const handleLogout = () => {
-  dispatch(logout());
-  navigate('/login');
-  window.location.reload();
- }
+ 
 
   return (
     <header>
@@ -23,7 +18,7 @@ function Header({ searchTerm, setSearchTerm }) {
             <img src={logo} alt="" />
           </div>
           <ul className='flexSB'>
-            <Link to={'/'} className='headerButton'>Home</Link>
+            <Link to={'/home'} className='headerButton'>Home</Link>
             <Link to={'/series'} className='headerButton'>Series</Link>
           </ul>
         </nav>
@@ -40,7 +35,7 @@ function Header({ searchTerm, setSearchTerm }) {
           </div>
          
           <div className='icons flexRow'>
-          <a href="#" onClick={handleLogout}><i className="fa-solid fa-arrow-left"></i></a>
+          <Link to={'/login'} ><i className="fa-solid fa-arrow-left"></i></Link>
           <a href=""><i className="fa-solid fa-bell" ></i></a>
           <a href=""><i className="fa-solid fa-user"></i></a>
           </div>

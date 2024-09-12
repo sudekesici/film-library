@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Card from '../components/Card';
 
-function HomePage({ searchTerm }) {
+function CardsPage({ searchTerm }) {
     const movies = useSelector((state) => state.movies.movies);
 
     const filteredMovies = searchTerm
@@ -29,4 +29,4 @@ function HomePage({ searchTerm }) {
     );
 }
 
-export default HomePage;
+export default CardsPage;

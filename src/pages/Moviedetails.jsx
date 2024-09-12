@@ -24,7 +24,6 @@ function Moviedetails() {
     <div>
       {movie ? (
         <div className="movieDetailContainer" style={{ position: 'relative', height: '500px', marginRight: '20px', marginTop: '23px' }}>
-          {/* sadece opaklık için ekledim */}
           <div 
               style={{ 
                 backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/${movie.backdrop_path}')`, 

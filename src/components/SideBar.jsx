@@ -22,7 +22,7 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
   }
 
   const categorizedMovies = movies.reduce((acc, movie) => {
-    if (!movie.category) return acc; // Eğer category undefined ise atla
+    if (!movie.category) return acc; 
     if (!acc[movie.category]) {
       acc[movie.category] = [];
     }
@@ -32,7 +32,7 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
 
   const filteredCategories = Object.keys(categorizedMovies).reduce((acc, category) => {
     const filteredMovies = categorizedMovies[category].filter((movie) =>
-      movie.title?.toLowerCase().includes(searchTerm?.toLowerCase()) // title undefined ise atla
+      movie.title?.toLowerCase().includes(searchTerm?.toLowerCase()) 
     );
 
     if (filteredMovies.length > 0) {
@@ -75,7 +75,7 @@ const Sidebar = ({ searchTerm, setSearchTerm }) => {
             <div key={category}>
               <h3 className='sidebarTitle'>{category}</h3>
               {filteredCategories[category].map((movie) => (
-                <Link key={movie.id} className='sidebarButton' to={`/movie-details/${movie.id}`}>
+                <Link key={movie.id} className='sidebarButton'   to={`/home/movie-details/${movie.id}`}  >
                   {movie.title}
                 </Link>
               ))}

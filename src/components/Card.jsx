@@ -12,7 +12,7 @@ function Card({ movie }) {
     return (
         <Link 
             className='card' 
-            to={`/movie-details/${movie.id}`}  
+            to={`/home/movie-details/${movie.id}`}  
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)}
         > 

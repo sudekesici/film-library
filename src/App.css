@@ -77,8 +77,6 @@ ul{
 .homeTitle{
 
  margin:20px 30px;
- position: fixed;
- z-index: 1000;
  top: 80px;
  width: 1380px;
  background-color: #141414 ;
@@ -100,7 +98,8 @@ ul{
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 10px;
-    margin-top: 80px ;
+    margin-top: -60px;
+  
 }
 
 .movieDetailContainer {
